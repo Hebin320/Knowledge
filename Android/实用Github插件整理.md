@@ -64,7 +64,8 @@ otto事件导航工具。
 ![这里写图片描述](http://img.blog.csdn.net/20170217112847906?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## Sexy Editor ##
 设置AS代码编辑区的背景图
-首先点击界面的设置按钮 进入设置界面，选中Plugins,右边选择 Browser … ，输入Sexy … 下面自动弹出候选插件，右边点击Install 安装
+首先点击界面的设置按钮 进入设置界面，选中Plugins,右边选择 Browser … ，输入Sexy … <br>
+下面自动弹出候选插件，右边点击Install 安装<br>
 ![这里写图片描述](http://img.blog.csdn.net/20170217113320091?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </br>
 
