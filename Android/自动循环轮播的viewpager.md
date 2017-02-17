@@ -1,3 +1,11 @@
+<font color="#1E90FF" size = 6>项目下载</font>
+</br>
+[https://github.com/Hebin320/Viewpage](https://github.com/Hebin320/Viewpage)
+
+
+----------
+## Viewpager ##
+
 <p>
 　　Viewpager是Android官方提供的一个控件，它的作用是可以实现几个视图的滑动切换，切换的子项可以的view，也可以是Fragment。但是官方提供的Viewpager是不允许无限切换的，而且也没有提供自动切换的接口。所以，如果想要实现自动循环切换视图，就只能自己来重写；以下提供一种实现方式。</p>
 　　
@@ -351,8 +359,6 @@ public class VpListener implements ViewPager.OnPageChangeListener {
 vpMain.setCurrentItem(1);
 ```
 
- - 最后实现的效果图如下：</br>
- ![这里写图片描述](http://img.blog.csdn.net/20170217162151006?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
  **4. 给Viewpager添加自动切换**
  
@@ -399,6 +405,3 @@ private int PHOTO_CHANGE_TIME = 1000;//定时变量
 ```
 vpMain.addOnPageChangeListener(new VpListener(VpListener.getImageViews(this,llPoint,list),vpMain,800));
 ```
-
- - 最终实现效果如下图：</br>
- ![这里写图片描述](http://img.blog.csdn.net/20170217165317365?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
