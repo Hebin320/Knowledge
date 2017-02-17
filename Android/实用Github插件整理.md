@@ -16,7 +16,6 @@
 可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序，
 使用方法：使用快捷键Ctrl + alt + K
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217115017489?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## CodeGlance ##
 在右边可以预览代码，实现快速定位
 </br>
@@ -61,7 +60,6 @@ maven gradle 依赖支持自动补全
 ## otto-intellij-plugin ##
 otto事件导航工具。
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217112847906?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## Sexy Editor ##
 设置AS代码编辑区的背景图
 首先点击界面的设置按钮 进入设置界面，选中Plugins,右边选择 Browser … ，输入Sexy … <br>
@@ -70,8 +68,6 @@ otto事件导航工具。
 </br>
 
 安装成功 后需要重启AS
-</br>
-![这里写图片描述](http://img.blog.csdn.net/20170217113343601?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </br>
 重启完成之后 进入设置界面 选择other Setting 下的Sexy Editor ， 右侧 insert 一张或多张图片即可，上面的其他设置可以设置方位 间隔时间 透明度等等，设置完成后，要关闭打开的文件，重新打开项目文件即可在代码编辑区显示插入的图片，作为代码编辑区的背景图。
 
