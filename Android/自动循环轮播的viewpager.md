@@ -114,8 +114,8 @@ public class MainActivity extends FragmentActivity {
 }
 ```
 
- - Fragment接收到Activity传过来的值，并将这个值（图片路径）设置给Imageview，加载出图片，从而实现了用Viewpager加载广告图的功能。实现效果如下：
- </br>
+ - Fragment接收到Activity传过来的值，并将这个值（图片路径）设置给Imageview，加载出图片，从而实现了用Viewpager加载广告图的功能。
+ 实现效果如下： </br>
  ![这里写图片描述](http://img.blog.csdn.net/20170217135504982?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </br>
 </br>
@@ -231,7 +231,7 @@ public class VpListener implements ViewPager.OnPageChangeListener {
 vpMain.addOnPageChangeListener(new VpListener(VpListener.getImageViews(this,llPoint,list),vpMain));
 ```
 
- - 最终实现效果如下：
+ - 最终实现效果如下：</br>
  ![这里写图片描述](http://img.blog.csdn.net/20170217151046866?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
  **3.  实现Viewpager的无限切换**
@@ -351,7 +351,7 @@ public class VpListener implements ViewPager.OnPageChangeListener {
 vpMain.setCurrentItem(1);
 ```
 
- - 最后实现的效果图如下：
+ - 最后实现的效果图如下：</br>
  ![这里写图片描述](http://img.blog.csdn.net/20170217162151006?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
  **4. 给Viewpager添加自动切换**
@@ -400,5 +400,5 @@ private int PHOTO_CHANGE_TIME = 1000;//定时变量
 vpMain.addOnPageChangeListener(new VpListener(VpListener.getImageViews(this,llPoint,list),vpMain,800));
 ```
 
- - 最终实现效果如下图：
+ - 最终实现效果如下图：</br>
  ![这里写图片描述](http://img.blog.csdn.net/20170217165317365?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
