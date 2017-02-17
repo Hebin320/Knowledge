@@ -1,10 +1,10 @@
 ## 引言 ##
 <p style="margin:10px auto; padding-top:0px; padding-bottom:0px; color:rgb(85,85,85); font-family:微软雅黑,宋体,黑体,Arial; font-size:14px; line-height:23.8px">
 　　Android开发的基础语言是基于Java语言的，所以，在搭建Android的开发环境之前，应该先搭建Java的开发环境。Java开发环境的搭建其实就是对JDK、JRE的安装以及环境变量的配置。总的来说Android开发环境可以分为以下四步：</p>
-<font color="#1E90FF" size = 4>第一步：安装JDK（jdk  &&  jre）</font>
-<font color="#1E90FF" size = 4>第二步：配置Windows上JDK的变量环境</font>
-<font color="#1E90FF" size = 4>第三步：下载安装Android Studio以及Android的Sdk</font>
-<font color="#1E90FF" size = 4>第四步：安装配置Android模拟器</font>
+<font color="#1E90FF" size = 4>第一步：安装JDK（jdk  &&  jre）</font><br>
+<font color="#1E90FF" size = 4>第二步：配置Windows上JDK的变量环境</font><br>
+<font color="#1E90FF" size = 4>第三步：下载安装Android Studio以及Android的Sdk</font><br>
+<font color="#1E90FF" size = 4>第四步：安装配置Android模拟器</font><br>
 </br>
 </br>
 </br>
