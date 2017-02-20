@@ -4,11 +4,11 @@
 
 实现的效果图：
 
-![这里写图片描述](http://img.blog.csdn.net/20160727185315933)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/T-mvp1.gif)
 
 项目结构，大概是这样的：
 
-![这里写图片描述](http://img.blog.csdn.net/20160727185409022)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/T-MVP2.png)
 
 
 1、用泛型实现MVP的大瘦身
@@ -60,7 +60,7 @@ public interface IEasyView<T> {
 
 Demo中用到的数据接口来自聚合数据提供的免费接口；数据结构大概是这样的：
 
-![这里写图片描述](http://img.blog.csdn.net/20160727190507240)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/T-MVP3.png)
 
 用Android Studio的GsonFormat可以将Json快速生成实体类；
 
