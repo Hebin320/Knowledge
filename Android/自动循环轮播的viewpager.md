@@ -122,8 +122,8 @@ public class MainActivity extends FragmentActivity {
 }
 ```
 
- - Fragment接收到Activity传过来的值，并将这个值（图片路径）设置给Imageview，加载出图片，从而实现了用Viewpager加载广告图的功能。
- 实现效果如下： </br>
+ - Fragment接收到Activity传过来的值，并将这个值（图片路径）设置给Imageview，加载出图片，从而实现了用Viewpager加载广告图的功能。实现效果如下：
+ </br>
  ![这里写图片描述](http://img.blog.csdn.net/20170217135504982?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </br>
 </br>
@@ -239,7 +239,7 @@ public class VpListener implements ViewPager.OnPageChangeListener {
 vpMain.addOnPageChangeListener(new VpListener(VpListener.getImageViews(this,llPoint,list),vpMain));
 ```
 
- - 最终实现效果如下：</br>
+ - 最终实现效果如下：
  ![这里写图片描述](http://img.blog.csdn.net/20170217151046866?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
  **3.  实现Viewpager的无限切换**
@@ -359,6 +359,8 @@ public class VpListener implements ViewPager.OnPageChangeListener {
 vpMain.setCurrentItem(1);
 ```
 
+ - 最后实现的效果图如下：
+ ![这里写图片描述](http://img.blog.csdn.net/20170217162151006?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
  **4. 给Viewpager添加自动切换**
  
@@ -404,4 +406,208 @@ private int PHOTO_CHANGE_TIME = 1000;//定时变量
 
 ```
 vpMain.addOnPageChangeListener(new VpListener(VpListener.getImageViews(this,llPoint,list),vpMain,800));
+```
+
+ - 最终实现效果如下图：
+ ![这里写图片描述](http://img.blog.csdn.net/20170217165317365?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+</br>
+</br>
+</br>
+
+----------
+
+#分割线
+----------
+
+<h3>将整个功能重新封装，代码如下：</h3>
+
+```
+public class MyViewpager extends ViewPager {
+
+    private Context context;
+    private int mPagePoistion;
+    private int mCount;
+    private LinearLayout llPoint;
+    private int PHOTO_CHANGE_TIME = 1000;
+    private  ImageView[] imageViews;
+    private FragmentManager fm;
+    private int normalBackground;
+    private int selectBackground;
+
+
+    public MyViewpager(Context context) {
+        super(context);
+        this.context = context;
+    }
+
+    public MyViewpager(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        this.context = context;
+    }
+
+    public void setPoint(LinearLayout llPoint,int normalBackground,int selectBackground){
+        this.llPoint = llPoint;
+        this.normalBackground = normalBackground;
+        this.selectBackground = selectBackground;
+    }
+    public void setFm(FragmentManager fm){
+        this.fm = fm;
+    }
+    public void setTime(int PHOTO_CHANGE_TIME){
+        this.PHOTO_CHANGE_TIME = PHOTO_CHANGE_TIME;
+    }
+
+    public void setFragment(ArrayList<Fragment> fragments ) {
+        VpAdapter adapter= new VpAdapter(fm,fragments);
+        MyViewpager.this.setAdapter(adapter);
+        MyViewpager.this.setOffscreenPageLimit(fragments.size() - 1);
+        MyViewpager.this.setCurrentItem(1);
+        imageViews = getImageViews(context,llPoint,fragments);
+        assert imageViews != null;
+        if (imageViews.length == 3) {
+            MyViewpager.this.addOnPageChangeListener(null);
+            mCount = imageViews.length - 2;
+        } else if (imageViews.length > 3) {
+            mCount = imageViews.length - 2;
+        } else {
+            mCount = 1;
+        }
+        mHandler.sendEmptyMessageAtTime(1, PHOTO_CHANGE_TIME);
+        MyViewpager.this.addOnPageChangeListener(new OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (mCount > 1) {
+                    if (position < 1) {//若到实际首位时把poistion设值为感官末尾
+                        mPagePoistion = mCount;
+                        setPoint(mCount);
+                    } else if (position > mCount) {//若到实际末位时把poistion设值为感官首尾
+                        mPagePoistion = 1;
+                        setPoint(1);
+                    } else {
+                        mPagePoistion = position;
+                        setPoint(position);
+                    }
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                if (ViewPager.SCROLL_STATE_IDLE == state) {
+                    MyViewpager.this.setCurrentItem(mPagePoistion, false);//第二个参数必须为false，不然会有个跳转动画
+                }
+            }
+        });
+    }
+
+    private int index = 1;
+    private Handler mHandler = new Handler() {
+
+        public void handleMessage(Message msg) {
+            if (index > imageViews.length - 2) {
+                index = 1;
+            }
+            MyViewpager.this.setCurrentItem(index);
+            index++;
+            mHandler.sendEmptyMessageDelayed(1, PHOTO_CHANGE_TIME);
+        }
+    };
+
+    private void setPoint(int states) {
+        if (imageViews != null ) {
+            for (int i = 1; i < mCount + 1; i++) {
+                if (i == states) {
+                    imageViews[i].setImageResource(selectBackground);
+                } else {
+                    imageViews[i].setImageResource(normalBackground);
+                }
+            }
+        }
+    }
+
+    public ImageView[] getImageViews(Context context, LinearLayout linearLayout, List list) {
+        if (list.size() == 1) {
+            return null;
+        } else {
+            linearLayout.removeAllViews();
+            ImageView[] imageViews = new ImageView[list.size()];
+            for (int i = 0; i < list.size(); i++) {
+                ImageView img = new ImageView(context);
+                int tb = (int) context.getResources().getDimension(R.dimen.margin_5);
+                LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(tb, tb);
+                layoutParams.setMargins(5, 0, 5, 0);
+                img.setLayoutParams(layoutParams);
+                imageViews[i] = img;
+                if (i == 0) {
+                    imageViews[i].setBackgroundResource(R.color.transparent);
+                } else if (i == 1) {
+                    imageViews[i].setBackgroundResource(selectBackground);
+                } else if (i == list.size() - 1) {
+                    imageViews[i].setBackgroundResource(R.color.transparent);
+                } else {
+                    imageViews[i].setBackgroundResource(normalBackground);
+                }
+                if (list.size()==3){
+                    for (int j = 0; j < list.size(); j++) {
+                        imageViews[i].setBackgroundResource(R.color.transparent);
+                    }
+                }
+                linearLayout.addView(imageViews[i]);
+            }
+            return imageViews;
+        }
+    }
+
+}
+
+```
+</br>
+<h5>在xml的应用重写的类</h5>
+
+```
+<com.hebin.viewpager.MyViewpager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+```
+</br>
+<h5>然后在Activity中设置属性即可；</h5>
+
+```
+public class MainActivity extends FragmentActivity {
+
+    MyViewpager vpMain;
+    LinearLayout llPoint;
+    private int[] img = {R.mipmap.ic_vp_01, R.mipmap.ic_vp_02, R.mipmap.ic_vp_03};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        vpMain = (MyViewpager) findViewById(R.id.vp_main);
+        llPoint = (LinearLayout) findViewById(R.id.ll_point);
+        ArrayList<Fragment> list = new ArrayList<>();
+        ImgFragment imgFragment;
+        imgFragment = ImgFragment.newInstance(img[img.length - 1]);
+        list.add(imgFragment);
+        for (int i = 0; i < img.length; i++) {
+            imgFragment = ImgFragment.newInstance(img[i]);
+            list.add(imgFragment);
+        }
+        imgFragment = ImgFragment.newInstance(img[0]);
+        list.add(imgFragment);
+        vpMain.setPoint(llPoint, R.drawable.gray_circle, R.drawable.color_circle);
+        vpMain.setFm(getSupportFragmentManager());
+        vpMain.setTime(800);
+        vpMain.setFragment(list);
+
+    }
+}
+
 ```
