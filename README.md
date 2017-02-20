@@ -21,6 +21,8 @@
 <li>
 <p><strong>SVN、Git、GitHub的知识点</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/SVN、Git、GitHub的知识点.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/SVN、Git、GitHub的知识点.md</a></p>
 </li>
+</ul>
+<ul>
 <li>
 <p><strong>GitHub开源库的使用（一）</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/GitHub开源库的使用（一）.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/GitHub开源库的使用（一）.md</a></p>
 </li>
@@ -30,6 +32,8 @@
 <li>
 <p><strong>GitHub开源库的使用（三）</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/GitHub开源库的使用（三）.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/GitHub开源库的使用（三）.md</a></p>
 </li>
+</ul>
+<ul>
 <li>
 <p><strong>自定义view之2048</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/自定义view之2048.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/自定义view之2048.md</a></p>
 </li>
@@ -42,6 +46,8 @@
 <li>
 <p><strong>自定义view之柱状图</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/自定义view之柱状图.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/自定义view之柱状图.md</a></p>
 </li>
+</ul>
+<ul>
 <li>
 <p><strong>第三方的接入之定位</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/第三方的接入之定位.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/第三方的接入之定位.md</a></p>
 </li>
@@ -54,6 +60,8 @@
 <li>
 <p><strong>第三方的接入之推送</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/第三方的接入之推送.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/第三方的接入之推送.md</a></p>
 </li>
+</ul>
+<ul>
 <li>
 <p><strong>自动循环轮播的viewpager</strong><br><a href="https://github.com/Hebin320/Knowledge/blob/master/Android/自动循环轮播的viewpager.md" target="_blank">https://github.com/Hebin320/Knowledge/blob/master/Android/自动循环轮播的viewpager.md</a></p>
 </li>
