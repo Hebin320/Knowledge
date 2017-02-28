@@ -1,19 +1,19 @@
 ## GsonFormat ##
-快速将json字符串转换成一个Java Bean，免去我们根据json字符串手写对应Java Bean的过程。
+快速将json字符串转换成一个Java Bean，免去我们根据json字符串手写对应Java Bean的过程。<br>
 使用方法：使用快捷键Alt+Insert选择GsonFormat
 </br>
 ![这里写图片描述](http://img.blog.csdn.net/20170217111041209?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## Android ButterKnife Zelezny##
-配合ButterKnife实现注解，从此不用写findViewById,onclick。在Activity，Fragment，Adapter中选中布局xml的资源id自动生成butterknife注解。
+配合ButterKnife实现注解，从此不用写findViewById,onclick。在Activity，Fragment，Adapter中选中布局xml的资源id自动生成butterknife注解。<br>
 使用方法：在Java代码中找到设置xml布局的代码，然后选中，使用快捷键Alt+Insert选择ButterKnife 
 </br>
 ![这里写图片描述](http://img.blog.csdn.net/20170217111313643?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## Android Methods Count ##
 显示依赖库中得方法数
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217111554857?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_data_count.gif)
 ## Lifecycle Sorter ##
-可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序，
+可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序，<br>
 使用方法：使用快捷键Ctrl + alt + K
 </br>
 ## CodeGlance ##
@@ -38,7 +38,7 @@ d. your style is prepared!
 </br>
 ![这里写图片描述](http://img.blog.csdn.net/20170217112325570?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217112334570?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_styler_1.png)
 </br>
 ![这里写图片描述](http://img.blog.csdn.net/20170217112346789?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## LeakCanary ##
@@ -48,11 +48,11 @@ d. your style is prepared!
 ## Android Postfix Completion ##
 可根据后缀快速完成代码，这个属于拓展吧，系统已经有这些功能，如sout、notnull等，
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217112548711?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_postfix.gif)
 ## dagger-intellij-plugin ##
 dagger可视化辅助工具
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217112643211?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_dagger.gif)
 ## GradleDependenciesHelperPlugin ##
 maven gradle 依赖支持自动补全
 </br>
@@ -73,7 +73,7 @@ otto事件导航工具。
 
 </br>
 ![这里写图片描述](http://img.blog.csdn.net/20170217113410435?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-![这里写图片描述](http://img.blog.csdn.net/20170217113447556?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_sexy.png)
 ## folding-plugin ##
 布局文件分组的插件
 </br>
@@ -81,18 +81,18 @@ otto事件导航工具。
 ## Material Theme UI ##
 添加Material主题到你的AS
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217113736515?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_material.png)
 ## JsonOnlineViewer ##
-![这里写图片描述](http://img.blog.csdn.net/20170217114927278?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_json.gif)
 ## AndroidWiFiADB ##
 无线调试应用
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217113855593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_wifiadb.gif)
 ## PermissionsDispatcher plugin ##
 github:Markdown Navigator
 Markdown插件
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217113953861?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_permissions.gif)
 ## H.A.X.M（硬件加速执行管理器） ##
 如果你想使用Android模拟器更快地执行应用程序，那么H.A.X.M是你的最佳选择。H.A.X.M提供Android SDK模拟器在英特尔系统中的硬件加速。我认为H.A.X.M是最有用的插件，因为它能让Android开发人员尽快地在模拟器上运行最新的Android版本。
 </br>
