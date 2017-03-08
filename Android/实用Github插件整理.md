@@ -1,17 +1,19 @@
-## GsonFormat ##
+# GsonFormat 
 快速将json字符串转换成一个Java Bean，免去我们根据json字符串手写对应Java Bean的过程。<br>
+</br>
 使用方法：使用快捷键Alt+Insert选择GsonFormat
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217111041209?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-## Android ButterKnife Zelezny##
+<img src="http://img.blog.csdn.net/20170217111041209?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width = "600px">
+#Android ButterKnife Zelezny
 配合ButterKnife实现注解，从此不用写findViewById,onclick。在Activity，Fragment，Adapter中选中布局xml的资源id自动生成butterknife注解。<br>
+</br>
 使用方法：在Java代码中找到设置xml布局的代码，然后选中，使用快捷键Alt+Insert选择ButterKnife 
 </br>
-![这里写图片描述](http://img.blog.csdn.net/20170217111313643?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-## Android Methods Count ##
+<img src="http://img.blog.csdn.net/20170217111313643?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGViaW4zMjAzMjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width = "600px">
+#Android Methods Count
 显示依赖库中得方法数
 </br>
-![这里写图片描述](https://github.com/Hebin320/ImageSave/blob/master/img/chajian_data_count.gif)
+<img src = "https://github.com/Hebin320/ImageSave/blob/master/img/chajian_data_count.gif" width = "600px">
 ## Lifecycle Sorter ##
 可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序，<br>
 使用方法：使用快捷键Ctrl + alt + K
